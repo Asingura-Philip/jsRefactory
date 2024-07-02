@@ -33,6 +33,12 @@ let age = 23;
 //declare variables to declare firstname,lastname,maritalstatus,country and age on a single line
 let firstname = "Philip"; surname = "Asingura";maritalstatus = "single";country = "uganda";age =  23;
 
-console.log(country);
+//console.log(country);
 
 
+//declare two variables myAge and yourAge and assign them initial values and log to the browser console
+let myAge = 25;
+let yourAge = 30;
+
+console.log("I am " + myAge + "years old");
+console.log("You are " + yourAge + "years old");
