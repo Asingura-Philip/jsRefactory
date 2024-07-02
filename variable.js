@@ -13,7 +13,7 @@ let unStated = undefined;     //undefined
 let nothing = null;           //null
 
 
-console.log(isMale)
+console.log(message)
 console.log(isMale)
 console.log(unStated)
 console.log(nothing)
