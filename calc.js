@@ -15,7 +15,9 @@ function minus(){
     text = "-" + text;
     document.querySelector(".display").innerText = text
 }
-
+function del(){
+    text = text.slice(0,-1)
+}
 function cls(){
     location.reload();
 }
@@ -60,3 +62,4 @@ function zero(){
     text = text + 0;
     document.querySelector(".display").innerText = text
 }
+console.log(text)
