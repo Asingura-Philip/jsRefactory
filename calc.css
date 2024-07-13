@@ -1,0 +1,31 @@
+.frame{
+    background-color: azure;
+    width: 450px;
+    max-height: 400px;
+    border-radius: 20px;
+    
+
+}
+.display{
+    background-color: rgb(196, 196, 214);
+    width: 400px;
+    height: 70px;
+    border-radius: 20px;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btnspace{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+button{
+    width: 50px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 600;
+}
