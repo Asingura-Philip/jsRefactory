@@ -1,18 +1,23 @@
-//let num = Number(document.getElementById("number").innerText)
-//console.log(num)
-let num = Number(document.getElementById("number").innerText)
 let text = document.querySelector(".display").innerText
-console.log(text)
-function add(){
 
+function divide(){
+    text = text + "/";
+    document.querySelector(".display").innerText = text
 }
-
+function decimal(){
+    text = text + ".";
+    document.querySelector(".display").innerText = text
+}
+function multiply(){
+    text = text + "*";
+    document.querySelector(".display").innerText = text
+}
 function plus(){
     text = text + "+";
     document.querySelector(".display").innerText = text
 }
 function minus(){
-    text = "-" + text;
+    text = text + "-";
     document.querySelector(".display").innerText = text
 }
 function del(){
@@ -21,7 +26,6 @@ function del(){
 function cls(){
     location.reload();
 }
-
 function one(){
     text =text + 1;
     document.querySelector(".display").innerText = text
@@ -62,4 +66,9 @@ function zero(){
     text = text + 0;
     document.querySelector(".display").innerText = text
 }
-console.log(text)
+function equals(){
+
+    text = eval(document.querySelector(".display").innerText)
+    document.querySelector(".display").innerText = text
+    
+}
