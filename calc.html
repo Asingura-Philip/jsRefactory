@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="frame">
+        <div class="display"></div>
+        <div class="btnspace">
+            <div class="btns"><button>7</button></div>
+            <div class="btns"><button>8</button></div>
+            <div class="btns"><button>9</button></div>
+            <div class="btns"><button>/</button></div>
+            <div class="btns"><button>4</button></div>
+            <div class="btns"><button>5</button></div>
+            <div class="btns"><button>6</button></div>
+            <div class="btns"><button>x</button></div>
+            <div class="btns" id="number" onclick="one()"><button>1</button></div>
+            <div class="btns" onclick="two()"><button>2</button></div>
+            <div class="btns"><button>3</button></div>
+            <div class="btns"><button>-</button></div>
+            <div class="btns"><button>.</button></div>
+            <div class="btns"><button>0</button></div>
+            <div class="btns"><button>=</button></div>
+            <div class="btns"><button>+</button></div>
+            <div class="btns" id="clear" onclick="cls()"><button>clear</button></div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
