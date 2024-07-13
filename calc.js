@@ -1,51 +1,62 @@
 //let num = Number(document.getElementById("number").innerText)
 //console.log(num)
-
+let num = Number(document.getElementById("number").innerText)
 let text = document.querySelector(".display").innerText
 console.log(text)
+function add(){
 
+}
+
+function plus(){
+    text = text + "+";
+    document.querySelector(".display").innerText = text
+}
+function minus(){
+    text = "-" + text;
+    document.querySelector(".display").innerText = text
+}
 
 function cls(){
     location.reload();
 }
-let num = Number(document.getElementById("number").innerText)
+
 function one(){
-    text = 1 + text;
+    text =text + 1;
     document.querySelector(".display").innerText = text
 }
 function two(){
-    text = 2 + text;
+    text = text + 2;
     document.querySelector(".display").innerText = text
 }
 function three(){
-    text = 3 + text;
+    text = text + 3;
     document.querySelector(".display").innerText = text
 }
 function four(){
-    text = 4 + text;
+    text = text + 4;
     document.querySelector(".display").innerText = text
 }
 function five(){
-    text = 5 + text;
+    text = text + 5;
     document.querySelector(".display").innerText = text
 }
 function six(){
-    text = 6 + text;
+    text = text + 6;
     document.querySelector(".display").innerText = text
 }
 function seven(){
-    text = 7 + text;
+    text = text + 7;
     document.querySelector(".display").innerText = text
 }
 function eight(){
-    text = 8 + text;
+    text = text + 8;
     document.querySelector(".display").innerText = text
 }
 function nine(){
-    text = 9 + text;
+    text = text + 9;
     document.querySelector(".display").innerText = text
 }
 function zero(){
-    text = 0 + text;
+    text = text + 0;
     document.querySelector(".display").innerText = text
 }
