@@ -67,8 +67,6 @@ function zero(){
     document.querySelector(".display").innerText = text
 }
 function equals(){
-
     text = eval(document.querySelector(".display").innerText)
     document.querySelector(".display").innerText = text
-    
 }
