@@ -9,3 +9,6 @@ function eqz(){
     values = eval(document.querySelector(".display").innerText)
     document.querySelector(".display").innerText = values
 }
+function clear(){
+    location.reload()
+}
