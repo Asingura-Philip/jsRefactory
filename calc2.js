@@ -1,9 +1,11 @@
-//trying to do this with conditional statements
+//trying to do less functions
 let values = document.querySelector(".display").innerText;
-
 
 function numLog(num){
     values = values + num;
-    //console.log(values)
     document.querySelector(".display").innerText = values;
 } 
+function eqz(){
+    values = eval(document.querySelector(".display").innerText)
+    document.querySelector(".display").innerText = values
+}
