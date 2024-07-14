@@ -10,5 +10,5 @@ function eqz(){
     document.querySelector(".display").innerText = values
 }
 function clear(){
-    location.reload()
+    location.reload();
 }
