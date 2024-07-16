@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <div>
+            <label for="username">username</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">password</label>
+            <input type="password">
+        </div>
+        
+        <button>log in</button>
+    </form>
+
+    <script>
+        let btn = document.getElementsById("button")
+        btn.addEventListener("click",handleClick())
+
+        function handleClick(){
+            alert("button clicked")
+        }
+    </script>
+    <script src="handlers.js"></script>
+</body>
+</html>
