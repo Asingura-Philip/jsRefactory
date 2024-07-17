@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <form action="">
-        <div>
-            <label for="username">username</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="">password</label>
-            <input type="password">
-        </div>
-        
-        <button>log in</button>
+      <div>
+        <label for="username">username</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label for="">password</label>
+        <input type="password" />
+      </div>
+      <a href=""></a>
+      <button id="button">log in</button>
     </form>
-
     <script>
-        let btn = document.getElementsById("button")
-        btn.addEventListener("click",handleClick())
-
-        function handleClick(){
-            alert("button clicked")
-        }
+      document.getElementById("button").addEventListener("click",function(event){
+          event.preventDefault()
+          console.log("Button clicked!");
+          console.log("Event type:", event.type); 
+          console.log("Target element:", event.target);
+          console.log("can cancel",event.cancelable)
+          console.log("path",event.composedPath()) 
+          console.log("current target",event.currentTarget) 
+          alert("Button clicked!");
+        });
     </script>
+
     <script src="handlers.js"></script>
-</body>
+  </body>
 </html>
