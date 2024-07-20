@@ -5,44 +5,16 @@ stuff[2].innerHTML = "hiiiii"
 console.log(stuff.length)
 */
 
-let ells = document.querySelectorAll("h2")
-ells[1].innerHTML = "hiiiiooooooooooo"
-console.log(ells)
+// let ells = document.querySelectorAll("h2")
+// ells[1].innerHTML = "hiiiiooooooooooo"
+// console.log(ells)
 
 
 
 //document.getElementById("second").innerHTML = "hiiii"
 
-//document.getElementsByClassName("h1").innerHTML = "hiiii"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let clars = document.getElementsByClassName("head")
+// clars[4].innerHTML = "hiiii"
 
 
 
@@ -57,5 +29,6 @@ console.log(ells)
 //     }
 
 // add(age)
+
 
 
