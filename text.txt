@@ -3,3 +3,8 @@ form submission
 redirection
 regular expression
 event object
+
+kali linux
+metasploitable 2
+owasp zap
+jcryptool
