@@ -31,3 +31,15 @@ function cubed(callback,a){
 
 console.log(callback(5))
 console.log(cubed(callback,3))
+
+//forEach
+let sum = 0;
+let nums = [1,2,3,4,5]
+
+nums.forEach(function(a){
+    return sum += a
+})
+console.log(sum)
+
+let names = "tom"
+console.log(names.toUpperCase())
