@@ -1,18 +1,33 @@
-let firstName = document.getElementById("fname").value;
-let lastName = document.getElementById("lname").value;
-let email = document.getElementById("email").value;
-let phoneNumber = document.getElementById("phone").value;
-let password = document.getElementById("password").value;
+let firstName = document.getElementById("fname")
+let lastName = document.getElementById("lname")
+let email =document.getElementById("email")
+let phoneNum = document.getElementById("phone")
+let passKey = document.getElementById("password")
+let formv = document.getElementById("form")
 
-let submitBtn = document.getElementById("sub");
+let subBtn = document.getElementById("sub")
 
-submitBtn.addEventListener("click", function (event) {
-    console.log(firstName.lenght)
-  event.preventDefault();
-  if (firstName.lenght < 3) {
-    console.log("please enter longer name");
+formv.addEventListener('submit',function(event){
+  event.preventDefault()
+  // if(firstName.value){
+  //   alert("please enter first name")
+  // }else{
+  //   alert("form submited")
+  //   console.log(firstName.value)
+  // }
+ 
+  if(email.value.includes(".com")){
+    console.log("valid email")
   }else{
-    console.log("valid")
+    alert("enter correct email")
   }
-  //alert("form submitted sucessfully");
-});
+
+  if(passKey.value == "password"){
+    alert("cant use 'password' as password")
+  }else if(passKey.value.length <=7){
+    alert("password has to be more than 7 characters")
+  }else{
+    console.log("password set")
+  }
+  formv.reset()
+})
