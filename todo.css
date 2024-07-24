@@ -1,0 +1,12 @@
+#outer{
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+
+}
+#task{
+    height: 100px;
+}
+.list{
+    background-color: antiquewhite;
+}

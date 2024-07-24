@@ -10,11 +10,14 @@ out.style.width = "400px"
 btn.addEventListener("click",function(event){
     event.preventDefault()
     let item = document.createElement("li")
-    lists.appendChild(item)
-    item.innerText = task.value
+    if(task.value == ""){
+        alert("nothing entered")
+
+    }else{
+        lists.appendChild(item)
+        item.innerText = task.value
+    }
     task.value = ""
-    
-    
 })
 
 del.addEventListener("click",function(){
