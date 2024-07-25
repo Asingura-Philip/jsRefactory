@@ -31,7 +31,7 @@ let people1 = new People("toby", 29);
 let people2 = new People("tony", 22);
 let people3 = new People("rony", 45);
 let people4 = new People("jony", 34);
-console.log()
+console.log();
 
 // console.log(people1,people2,people3,people4)
 
@@ -40,8 +40,8 @@ class Rectangle {
     this.length = length;
     this.width = width;
   }
-  calcPerimeter(){
-   return 2*(this.length + this.width)
+  calcPerimeter() {
+    return 2 * (this.length + this.width);
   }
 }
 
@@ -50,11 +50,40 @@ let rect2 = new Rectangle(13, 5);
 let rect3 = new Rectangle(10, 20);
 
 // console.log(rect1,rect2,rect3)
-rect1.area= function(){
-    console.log(this.length*this.width)
+rect1.area = function () {
+  console.log(this.length * this.width);
+};
+
+// rect1.area()
+// console.log(rect1.calcPerimeter())
+
+//inheritance
+
+class Cse {
+  constructor(name) {
+    this.name = name;
+  }
+  lang() {
+    console.log(`${this.name} speaks chinese`);
+  }
 }
 
+class Js extends Cse {
+  constructor(name) {
+    super(name);
+  }
+  lang() {
+    console.log(`${this.name} speaks korean`);
+  }
+}
+class Py extends Cse {
+    constructor(name) {
+      super(name);
+    }
+    lang() {
+      console.log(`${this.name} speaks korean`);
+    }
+  }
 
-rect1.area()
-console.log(rect1.calcPerimeter())
-
+let jsEngineer = new Js("shelby");
+jsEngineer.lang();
