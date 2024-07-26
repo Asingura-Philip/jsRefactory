@@ -95,7 +95,24 @@ class Product{
     this.price=price
     this.quantity=quantity
   }
+  price(){
+    console.log(`the total price of ${this.name} is ${this.price * this.quantity}`)
+  }
 }
+
+class Millet extends Product{
+  constructor(name,price,quantity,type){
+    super(name,price,quantity)
+    this.type=type;
+  }
+  buy(){
+    console.log(`you have bought ${this.quantity} bags of ${this.name}`)
+    super.price()
+  }
+}
+
+let millet = new Millet("tooro millet",20000,3,"mixed")
+millet.buy()
 
 class Beans extends Product{
   constructor(name,price,type){
@@ -130,4 +147,4 @@ Posho {
 */
 
 let rice = new Rice("Kaiso",24)
-console.log(rice)
+// console.log(rice)
