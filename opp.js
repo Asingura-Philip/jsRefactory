@@ -86,4 +86,48 @@ class Py extends Cse {
   }
 
 let jsEngineer = new Js("shelby");
-jsEngineer.lang();
+// jsEngineer.lang();
+
+
+class Product{
+  constructor(name,price,quantity){
+    this.name= name
+    this.price=price
+    this.quantity=quantity
+  }
+}
+
+class Beans extends Product{
+  constructor(name,price,type){
+    super(name,price)
+    this.type=type;
+  }
+}
+class Rice extends Product{
+  constructor(name,quantity,origin){
+    super(name,null,quantity)//include null for parent constructor arguments not to be used
+    this.origin = origin
+  }
+}
+class Posho extends Product{
+  constructor(name,grade){
+    super(name)
+    this.grade = grade
+  }
+}
+
+let posho = new Posho("namwezi",2)
+
+//console.log(posho)
+/* output
+Posho {
+  name: 'namwezi',
+  price: undefined,
+  quantity: undefined,
+  grade: 2
+}
+  //the constructor properties from the parent will show but will be undefined
+*/
+
+let rice = new Rice("Kaiso",24)
+console.log(rice)
