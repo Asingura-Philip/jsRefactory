@@ -1,6 +1,8 @@
 let lists = document.getElementById("lists")
 let task = document.getElementById("task")
+
 let btn = document.getElementById("submit")
+
 let del = document.getElementById("del")
 let out = document.getElementById("outer")
 
@@ -15,7 +17,7 @@ btn.addEventListener("click",function(event){
 
     }else{
         lists.appendChild(item)
-        item.innerText = task.value
+        item.innerText = task.value 
     }
     task.value = ""
 })
