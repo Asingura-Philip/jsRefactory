@@ -58,19 +58,19 @@ Comments can make code readble,
 //create a function that counts the number of syllables a word has
 //each syllable is separated eith a dash
 
-// function numberSyllables(word) {
-//   let myArray = word.split("");
-//   let sep = 0;
-//   for (let i = 0; i < myArray.lenght; i++) {
-//     console.log(i);
-//     if (myArray[i] === "-") {
-//       sep = sep + 1;
-//     }
-//   }
-//   console.log(sep);
-// }
+function numberSyllables(word) {
+  let myArray = word.split("");
+  let sep = 0;
+  for (let i = 0; i < myArray.length; i++) {
+    
+    if (myArray[i] === "-") {
+      sep = sep + 1;
+    }
+  }
+  console.log(sep);
+}
 
-// numberSyllables("ba-na-na");
+numberSyllables("ba-na-na");
 
 // let word = "a-bc-dc-ju";
 function newSyll(word) {
@@ -85,6 +85,7 @@ function newSyll(word) {
   console.log(` ${word} contains ${sep} syllables`);
 }
 newSyll("ma-ca-ro-ni")
+
 // // let name = "saitama";
 // // console.log(name.split(''));
 
