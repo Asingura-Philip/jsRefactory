@@ -70,7 +70,7 @@ function numberSyllables(word) {
   console.log(sep);
 }
 
-numberSyllables("ba-na-na");
+//numberSyllables("ba-na-na");
 
 // let word = "a-bc-dc-ju";
 function newSyll(word) {
@@ -84,7 +84,7 @@ function newSyll(word) {
   }
   console.log(` ${word} contains ${sep} syllables`);
 }
-newSyll("ma-ca-ro-ni")
+//newSyll("ma-ca-ro-ni")
 
 // // let name = "saitama";
 // // console.log(name.split(''));
@@ -97,3 +97,19 @@ newSyll("ma-ca-ro-ni")
 //   }
 // }
 // console.log(sep);
+
+
+//function that doubles each character in string
+function double(word){
+  let makeA = word.split("")
+  let doub = []
+  makeA.forEach(function(val){
+    val = val + val
+    doub.push(val)
+  })
+  let newWord = doub.join("")
+  console.log(newWord)
+
+}
+
+double("hello")
