@@ -113,3 +113,6 @@ function double(word){
 }
 
 double("hello")
+double("pauline")
+double("refactory")
+double("enjura")
