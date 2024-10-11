@@ -27,6 +27,9 @@ class People {
     this.age = age;
   }
 }
+
+
+
 let people1 = new People("toby", 29);
 let people2 = new People("tony", 22);
 let people3 = new People("rony", 45);
